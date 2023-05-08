@@ -13,7 +13,7 @@ public class SelectionSort1{
             arr[i] = sc.nextInt();
         }
 
-        selectionSort.sort(arr);
+        selectionSort(arr);
 
         System.out.println("Sorted array: ");
         for(int i=0; i<n; i++){
