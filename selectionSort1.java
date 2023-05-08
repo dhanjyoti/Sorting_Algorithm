@@ -13,7 +13,7 @@ public class SelectionSort1{
             arr[i] = sc.nextInt();
         }
 
-        SelectionSort.sort(arr);
+        selectionSort.sort(arr);
 
         System.out.println("Sorted array: ");
         for(int i=0; i<n; i++){
@@ -21,8 +21,7 @@ public class SelectionSort1{
         }
     }
 
-class SelectionSort{
-    public static void sort(int[] arr){
+    public static void selectionSort(int[] arr){
         int n=arr.length;
         for(int i=0; i<n; i++){
             // Find the minimum element in the unsorted part of the array.
@@ -39,6 +38,4 @@ class SelectionSort{
             arr[minIndex] = temp;
         }
     }
-}
-
 }
